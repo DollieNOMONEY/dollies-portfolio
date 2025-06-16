@@ -1,7 +1,7 @@
 import React from 'react'
 
 type ParagraphProps = {
-    title: string
+    title?: string
     children?: React.ReactNode
 }
 
