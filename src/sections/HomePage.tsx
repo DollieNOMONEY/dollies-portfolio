@@ -22,7 +22,7 @@ export default function HomePage() {
             <h1 className='text-7xl font-bold mb-6'>Dollar</h1>
             <p className='text-xl'>
             I am a <b>web developer</b> who spends their days in building <b>high quality, responsive websites</b>. With a ton of experience in <b>front-end</b> and <b>back-end</b> development, I can quickly and effciently transform ideas into <b>top-tier websites</b>.
-            My proficiency with modern technologies and frameworks enables me to deliver <b>user-friendly</b>, <b>visually appealing</b> websites focused on fulfilling clients' need and customization.
+            My proficiency with modern technologies and frameworks enables me to deliver <b>user-friendly</b>, <b>visually appealing</b> websites focused on fulfilling clients&apos; need and customization.
             </p>
             <br/>
             <p className='text-xl'>
@@ -47,7 +47,7 @@ export default function HomePage() {
             <div className='max-w-5xl mb-14'>
               <Paragraph>
                 I am available for freelance work for front-end, back-end, or full-stack projects. 
-                If you are interested in collaborating, please <Link className='font-bold hover:underline text-blue-600' href="mailto:softwaredevelopment.dollie@gmail.com?subject=Web%20Project%20Work!&body=Hi%20Dollar%2C%20I'm%20interested%20in%20a%20web%20development%20project.">email me</Link> and we'll discuss 
+                If you are interested in collaborating, please <Link className='font-bold hover:underline text-blue-600' href="mailto:softwaredevelopment.dollie@gmail.com?subject=Web%20Project%20Work!&body=Hi%20Dollar%2C%20I'm%20interested%20in%20a%20web%20development%20project.">email me</Link> and we&apos;ll discuss 
                 your project!
               </Paragraph>
             </div>

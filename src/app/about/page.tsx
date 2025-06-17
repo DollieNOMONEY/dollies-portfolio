@@ -12,7 +12,7 @@ export default function AboutPage() {
       <Navbar isActive="about"/>
       <SpacingLayout>
         <Paragraph title="Who am I?">
-        Hi! I&apos;m Dollar, I've been coding for nearly a decade and have been focused on web development for the past year. I am passionate about helping businesses and clients in need to drive more traffic to their brand.
+        Hi! I&apos;m Dollar, I&apos;ve been coding for nearly a decade and have been focused on web development for the past year. I am passionate about helping businesses and clients in need to drive more traffic to their brand.
         </Paragraph>
         <Paragraph>
           I believe that nowadays, every brand deserves a professional and accessible website. An aesthetically pleasing yet simple website is enough to provide a powerful first impression.
