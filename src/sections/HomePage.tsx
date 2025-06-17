@@ -16,7 +16,7 @@ export default function HomePage() {
     <div className='w-full'>
       <Navbar isActive="home"/>
       <div
-        className='w-full bg-white py-4'>
+        className='w-full bg-white dark:bg-neutral-950 py-4'>
         <div className="px-12 md:px-0 flex justify-center items-center flex-col xl:flex-row xl:gap-32">
           <div className="max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-md w-full">
             <h1 className='text-7xl font-bold mb-6'>Dollar</h1>
@@ -42,7 +42,7 @@ export default function HomePage() {
       </div>
 
       <div
-        className='w-full mt-8'>
+        className='w-full pt-8 dark:bg-neutral-950'>
           <div className="flex justify-center gap-40 items-center w-full px-12">
             <div className='max-w-5xl mb-14'>
               <Paragraph>
@@ -55,7 +55,7 @@ export default function HomePage() {
       </div>
 
       <div
-        className='w-full bg-neutral-100'>
+        className='w-full bg-neutral-100 dark:bg-black'>
           <div className="flex justify-center items-center px-12">
             <div className="max-w-5xl w-full mt-16">
               <Paragraph title="Technologies">
@@ -79,14 +79,14 @@ export default function HomePage() {
 
               <Paragraph title="Writing">
                 I never thought documenting my journey as a web developer would be crucial for a great learning experience until today. I may occassionally blog, since it a powerful tool for me to document my web developing
-                journey. <Link className='font-bold hover:underline text-blue-600' href="/blogs">Click me</Link> to check out my blogs.
+                journey. <Link className='font-bold hover:underline text-blue-600' href="/blog">Click me</Link> to check out my blogs.
               </Paragraph>
             </div>
           </div>
       </div>
 
        <div
-        className='w-full bg-white flex justify-center'>
+        className='w-full bg-white dark:bg-neutral-950 flex justify-center'>
           <div className="flex justify-center items-center px-12">
             <div className="max-w-5xl w-full mt-18 px-12">
               <h1 className='text-center text-4xl sm:text-8xl font-bold mb-6'>Wanna connect?</h1>
@@ -96,7 +96,7 @@ export default function HomePage() {
         </div>
 
       <div
-        className='w-full bg-white'>
+        className='w-full bg-white dark:bg-neutral-950'>
           <div className="flex justify-center">
             <div className="max-w-5xl w-full">
               <ContactButton/>

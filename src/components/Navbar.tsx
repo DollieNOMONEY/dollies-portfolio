@@ -14,7 +14,7 @@ export default function Navbar({isActive}: NavbarProps) {
     }`
 
   return (
-    <nav className="flex mt-12 justify-center gap-16 text-xl text-black z-20">
+    <nav className="flex pt-12 justify-center gap-16 text-xl text-black z-20 dark:bg-neutral-950">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap items-center justify-between h-16">
                 <div className="flex flex-wrap flex-row w-full justify-between">
