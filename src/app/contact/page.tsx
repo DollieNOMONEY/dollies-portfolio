@@ -7,8 +7,6 @@ import SocialMediaContainer from '@/components/SocialMediaContainer'
 import HorizontalLine from '@/components/HorizontalLine'
 import ContactButton from '@/components/ContactButton'
 
-import Link from 'next/link'
-
 export default function ContactPage() {
   return (
     <div className='w-full'>

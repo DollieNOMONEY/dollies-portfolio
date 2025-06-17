@@ -4,7 +4,8 @@ import HomePage from "@/sections/HomePage";
 import { ReactLenis, useLenis } from 'lenis/react'
 
 export default function Home() {
-  const lenis = useLenis();
+  // const lenis = useLenis();
+  useLenis();
 
   return (
     <>

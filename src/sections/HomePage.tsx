@@ -1,11 +1,11 @@
 import React from 'react'
 
 import Navbar from '@/components/Navbar'
-import HorizontalLine from '@/components/HorizontalLine'
+// import HorizontalLine from '@/components/HorizontalLine'
 import Paragraph from '@/components/Paragraph'
 import SocialMediaContainer from '@/components/SocialMediaContainer'
 import Laptop from '../img/laptop.jpg'
-import SpacingLayout from '@/components/SpacingLayout'
+// import SpacingLayout from '@/components/SpacingLayout'
 import ContactButton from '@/components/ContactButton'
 
 import Link from 'next/link'
@@ -26,7 +26,7 @@ export default function HomePage() {
             </p>
             <br/>
             <p className='text-xl'>
-            I am passionate about writing clean, maintainable code and optimizing performance for a future-proof seamless user experience. Whether I'm building a simple landing page or a complex web application,
+            I am passionate about writing clean, maintainable code and optimizing performance for a future-proof seamless user experience. Whether I&apos;m building a simple landing page or a complex web application,
             I bring <b>creativity, technical skill, and attention to detail</b> to every project.
             </p>
           </div>
@@ -73,9 +73,9 @@ export default function HomePage() {
               </Paragraph>
 
               <Paragraph
-                  title="Projects"
-                  children="While I began my journey focusing on front-end development using core technologies like HTML, CSS, and JavaScript, I quickly realized the power of modern frameworks and full-stack development. This growth has helped me build more scalable, maintainable, and dynamic web applications."  
-                />
+                  title="Projects">
+                    While I began my journey focusing on front-end development using core technologies like HTML, CSS, and JavaScript, I quickly realized the power of modern frameworks and full-stack development. This growth has helped me build more scalable, maintainable, and dynamic web applications.
+                  </Paragraph>
 
               <Paragraph title="Writing">
                 I never thought documenting my journey as a web developer would be crucial for a great learning experience until today. I may occassionally blog, since it a powerful tool for me to document my web developing

@@ -6,7 +6,7 @@ type NavbarProps = {
 }
 
 export default function Navbar({isActive}: NavbarProps) {
-    const baseClasses = "font-bold text-black dark:text-white hover:underline"
+    // const baseClasses = "font-bold text-black dark:text-white hover:underline"
     
     const linkClass = (page: string) =>
     `font-bold ${
