@@ -19,7 +19,7 @@ export default function Navbar({isActive}: NavbarProps) {
             <div className="flex flex-wrap items-center justify-between h-16">
                 <div className="flex flex-wrap flex-row w-full justify-between">
                     <div>
-                        <div className="flex items-baseline space-x-15">
+                        <div className="flex items-baseline space-x-5 sm:space-x-6 md:space-x-15 text-sm md:text-xl">
                             <Link className={linkClass('home')} href="/">
                             Home
                             </Link>

@@ -18,7 +18,7 @@ export default function AboutPage() {
           I believe that nowadays, every brand deserves a professional and accessible website. An aesthetically pleasing yet simple website is enough to provide a powerful first impression.
         </Paragraph>
         <Paragraph>
-        Currently I'm learning as a Software Developer at <Link target='_blank' className='font-bold underline text-blue-600' href="https://cambodia.itstep.org/">ITStep Cambodia</Link> where I'm learning programming languages such as C++, C#, Javascript, and Typescript, and object-oriented programming.
+        Currently I'm learning as a Software Developer at <Link target='_blank' className='font-bold hover:underline text-blue-600' href="https://cambodia.itstep.org/">ITStep Cambodia</Link> where I'm learning programming languages such as C++, C#, Javascript, and Typescript, and object-oriented programming.
         While I began with IT and Windows application fundamentals, my focus is now shifting toward full-stack web development, combining front-end and back-end technologies all together to build a complete, scalable web application.
         </Paragraph>
         <Paragraph>
