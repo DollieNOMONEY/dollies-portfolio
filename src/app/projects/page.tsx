@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
 import SpacingLayout from '@/components/SpacingLayout'
-import Paragraph from '@/components/Paragraph'
 import ProjectPreview from '@/components/ProjectPreview'
 export default function ProjectsPage() {
   return (
