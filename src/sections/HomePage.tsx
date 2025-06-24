@@ -17,15 +17,17 @@ export default function HomePage() {
       <Navbar isActive="home"/>
       <div
         className='w-full bg-white dark:bg-neutral-950 py-4'>
-        <div className="px-12 md:px-0 flex justify-center items-center flex-col xl:flex-row xl:gap-32">
+        <div className="px-6 md:px-0 flex justify-center items-center flex-col xl:flex-row xl:gap-32">
           <div className="max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-md w-full">
-            <h1 className='text-7xl font-bold mb-6'>Dollar</h1>
-            <p className='text-xl'>
+            <h1 className='text-5xl font-bold mb-2'>Dollar</h1>
+            <h2 className='text-xl font-bold'>Full-stack Developer</h2>
+            <h2 className='text-xl mb-8'>| Ly Dollar Chuon</h2>
+            <p className='text-lg xl:text-xl'>
             I am a <b>web developer</b> who spends their days in building <b>high quality, responsive websites</b>. With a ton of experience in <b>front-end</b> and <b>back-end</b> development, I can quickly and effciently transform ideas into <b>top-tier websites</b>.
             My proficiency with modern technologies and frameworks enables me to deliver <b>user-friendly</b>, <b>visually appealing</b> websites focused on fulfilling clients&apos; need and customization.
             </p>
             <br/>
-            <p className='text-xl'>
+            <p className='text-lg xl:text-xl'>
             I am passionate about writing clean, maintainable code and optimizing performance for a future-proof seamless user experience. Whether I&apos;m building a simple landing page or a complex web application,
             I bring <b>creativity, technical skill, and attention to detail</b> to every project.
             </p>
@@ -43,7 +45,7 @@ export default function HomePage() {
 
       <div
         className='w-full pt-8 dark:bg-neutral-950'>
-          <div className="flex justify-center gap-40 items-center w-full px-12">
+          <div className="flex justify-center gap-40 items-center w-full px-6">
             <div className='max-w-5xl mb-14'>
               <Paragraph>
                 I am available for freelance work for front-end, back-end, or full-stack projects. 
@@ -56,7 +58,7 @@ export default function HomePage() {
 
       <div
         className='w-full bg-neutral-100 dark:bg-black'>
-          <div className="flex justify-center items-center px-12">
+          <div className="flex justify-center items-center px-6">
             <div className="max-w-5xl w-full mt-16">
               <Paragraph title="Technologies">
                 I have experience working with a modern web development stack that includes
@@ -87,8 +89,8 @@ export default function HomePage() {
 
        <div
         className='w-full bg-white dark:bg-neutral-950 flex justify-center'>
-          <div className="flex justify-center items-center px-12">
-            <div className="max-w-5xl w-full mt-18 px-12">
+          <div className="flex justify-center items-center px-6">
+            <div className="max-w-5xl w-full mt-18 px-6">
               <h1 className='text-center text-4xl sm:text-8xl font-bold mb-6'>Wanna connect?</h1>
               <h1 className='text-[20rem] text-center '>👇</h1>
             </div>

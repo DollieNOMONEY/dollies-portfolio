@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div className='w-full'>
       <Navbar isActive="about"/>
       <SpacingLayout>
-        <Paragraph title="Who am I?">
+        <Paragraph title="About">
         Hi! I&apos;m Dollar, I&apos;ve been coding for nearly a decade and have been focused on web development for the past year. I am passionate about helping businesses and clients in need to drive more traffic to their brand.
         </Paragraph>
         <Paragraph>

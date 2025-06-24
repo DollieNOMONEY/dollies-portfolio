@@ -9,7 +9,7 @@ export default function Paragraph({title, children}: ParagraphProps) {
   return (
     <div>
         <h2 className='text-4xl font-extrabold mb-12'>{title}</h2>
-        <p className='text-xl mb-12'>{children}</p>
+        <p className='text-lg xl:text-xl mb-12'>{children}</p>
     </div>
   )
 }
