@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Navbar from '@/components/Navbar'
-import Paragraph from '@/components/Paragraph'
-import SpacingLayout from '@/components/SpacingLayout'
+// import Navbar from '@/components/Navbar'
+// import Paragraph from '@/components/Paragraph'
+// import SpacingLayout from '@/components/SpacingLayout'
 
-import Link from 'next/link'
+// import Link from 'next/link'
 
 export default function AboutPage() {
   return (

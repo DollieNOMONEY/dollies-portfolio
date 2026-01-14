@@ -8,7 +8,7 @@ import Profile from '../img/profile.jpg'
 // import SpacingLayout from '@/components/SpacingLayout'
 import ContactButton from '@/components/ContactButton'
 
-import Link from 'next/link'
+// import Link from 'next/link'
 import Image from 'next/image'
 
 export default function HomePage() {
