@@ -8,8 +8,8 @@ type ParagraphProps = {
 export default function Paragraph({title, children}: ParagraphProps) {
   return (
     <div>
-        <h2 className='text-4xl font-extrabold mb-12'>{title}</h2>
-        <p className='text-lg xl:text-xl mb-12'>{children}</p>
+        <h2 className='text-4xl font-extrabold mb-12 text-gray-300 text-center'>{title}</h2>
+        <p className='text-lg xl:text-xl mb-12 text-gray-300 text-center'>{children}</p>
     </div>
   )
 }

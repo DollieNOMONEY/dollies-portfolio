@@ -9,7 +9,7 @@ import Link from 'next/link'
 export default function AboutPage() {
   return (
     <div className='w-full'>
-      <Navbar isActive="about"/>
+      {/* <Navbar isActive="about"/>
       <SpacingLayout>
         <Paragraph title="About">
         Hi! I&apos;m Dollar, I&apos;ve been coding for nearly a decade and have been focused on web development for the past year. I am passionate about helping businesses and clients in need to drive more traffic to their brand.
@@ -25,7 +25,7 @@ export default function AboutPage() {
           In my free time, I enjoy thrifting, styling outfits, making music, and freestyling to beats. I&apos;m also into reading, exploring cafes, and being more social in my community. 
           Cafe-hopping and finding unique clothes are definitely my favorite hobbies, they help me stay inspired and creative outside of coding!
         </Paragraph>
-      </SpacingLayout>
+      </SpacingLayout> */}
     </div>
   )
 }

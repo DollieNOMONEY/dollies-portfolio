@@ -10,23 +10,26 @@ export default function Navbar({isActive}: NavbarProps) {
     
     const linkClass = (page: string) =>
     `font-bold ${
-        isActive === page ? 'underline text-blue-600' : 'text-black dark:text-white hover:underline'
+        isActive === page ? 'underline text-[#9c0003]' : 'text-black dark:text-white hover:underline'
     }`
 
   return (
-    <nav className="flex pt-12 justify-center gap-16 text-xl text-black z-20 dark:bg-neutral-950">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-white dark:bg-[#121212] flex pt-12 justify-center gap-16 text-xl text-black z-20">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-12">
             <div className="flex flex-wrap items-center justify-between h-16">
                 <div className="flex flex-wrap flex-row w-full justify-between">
                     <div>
                         <div className="flex items-baseline space-x-5 sm:space-x-6 md:space-x-15 text-sm md:text-xl">
-                            <Link className={linkClass('home')} href="/">
+                            <Link className={linkClass('home2')}  href="/">
+                            DOLLAR
+                            </Link>
+                            <Link className={linkClass('home')}  href="/">
                             Home
                             </Link>
-                            <Link className={linkClass('about')} href="/about">
+                            {/* <Link className={linkClass('about')} href="/about">
                             About
-                            </Link>
-                            <Link className={linkClass('contact')} href="/contact">
+                            </Link> */}
+                            {/* <Link className={linkClass('contact')} href="/contact">
                             Hire me
                             </Link>
                             <Link className={linkClass('projects')} href="/projects">
@@ -34,7 +37,7 @@ export default function Navbar({isActive}: NavbarProps) {
                             </Link>
                             <Link className={linkClass('blog')} href="/blog">
                             Blogs
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>

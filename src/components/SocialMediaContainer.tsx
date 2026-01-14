@@ -13,7 +13,7 @@ export default function SocialMediaContainer() {
             handle="@DollieNOMONEY"
             />
             
-            <SocialLink
+            {/* <SocialLink
             iconName="instagram"
             title="Instagram"
             link="https://www.instagram.com/dollie.cantcode/"
@@ -25,7 +25,7 @@ export default function SocialMediaContainer() {
             title="Twitter"
             link="https://x.com/dollie_cantcode"
             handle="@dollie.cantcode"
-            />
+            /> */}
 
             <div className='mb-24'/>
 

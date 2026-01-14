@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Gilda_Display } from "next/font/google";
 import "./globals.css";
 import '../lib/fontawesome'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const gildaDisplay = Gilda_Display({
+  variable: "--font-gilda-display",
+  weight: '400',
   subsets: ["latin"],
 });
 
@@ -26,7 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`max-w-full overflow-x-hidden ${geistSans.variable} ${geistMono.variable} antialiased`}
+      // ${geistSans.variable} ${geistMono.variable}
+        className={`max-w-full overflow-x-hidden ${gildaDisplay.className} antialiased`}
         // style={{backgroundColor: '#f2f2f2'}}
       >
         {children}

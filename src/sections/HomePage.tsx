@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 // import HorizontalLine from '@/components/HorizontalLine'
 import Paragraph from '@/components/Paragraph'
 import SocialMediaContainer from '@/components/SocialMediaContainer'
-import Laptop from '../img/laptop.jpg'
+import Profile from '../img/profile.jpg'
 // import SpacingLayout from '@/components/SpacingLayout'
 import ContactButton from '@/components/ContactButton'
 
@@ -13,50 +13,113 @@ import Image from 'next/image'
 
 export default function HomePage() {
   return (
-    <div className='w-full'>
+    <div className="w-full min-h-screen bg-white dark:bg-[#121212] antialiased overflow-x-hidden">
       <Navbar isActive="home"/>
+      
       <div
-        className='w-full bg-white dark:bg-neutral-950 py-4'>
+        className='bg-white dark:bg-[#121212] w-full'>
+
+        <main className="relative h-screen w-[full] flex items-center justify-center overflow-hidden">
+          <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold text-gray-300 text-center leading-none tracking-tighter px-4 select-none z-10">
+            Creativity is Power
+          </h1>
+        </main>
+
         <div className="px-6 md:px-0 flex justify-center items-center flex-col xl:flex-row xl:gap-32">
           <div className="max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-md w-full">
-            <h1 className='text-5xl font-bold mb-2'>Dollar</h1>
-            <h2 className='text-xl font-bold'>Full-stack Developer</h2>
-            <h2 className='text-xl mb-8'>| Ly Dollar Chuon</h2>
-            <p className='text-lg xl:text-xl'>
-            I am a <b>web developer</b> who spends their days in building <b>high quality, responsive websites</b>. With a ton of experience in <b>front-end</b> and <b>back-end</b> development, I can quickly and effciently transform ideas into <b>top-tier websites</b>.
-            My proficiency with modern technologies and frameworks enables me to deliver <b>user-friendly</b>, <b>visually appealing</b> websites focused on fulfilling clients&apos; need and customization.
-            </p>
-            <br/>
-            <p className='text-lg xl:text-xl'>
-            I am passionate about writing clean, maintainable code and optimizing performance for a future-proof seamless user experience. Whether I&apos;m building a simple landing page or a complex web application,
-            I bring <b>creativity, technical skill, and attention to detail</b> to every project.
-            </p>
+            <h1 className='text-5xl font-bold mb-2 text-gray-300'>Dollar</h1>
+            <h2 className='text-xl font-bold text-gray-300'>Creative Director</h2>
+            <h2 className='text-xl font-bold text-gray-300'>Full-stack Developer</h2>
+            <h2 className='text-xl font-bold text-gray-300'>Music Producer / Artist</h2>
+            <br></br>
+            <h2 className='text-xl mb-8 text-gray-300'>| Ly Dollar Chuon</h2>
+
+           
+            
           </div>
           <div className="max-w-md">
-            <div className='mt-12 xl:mt-32'/>
+            <div className='mt-12 xl:mt-60'/>
             <Image
-                src={Laptop}
+                src={Profile}
                 alt="Setup"
-                className='block rounded-tr-4xl rounded-tl-4xl rounded-bl-4xl w-full'
+                className='block rounded-full w-full'
               />
           </div>
         </div>
       </div>
 
       <div
-        className='w-full pt-8 dark:bg-neutral-950'>
+        className='w-full pt-8 bg-white dark:bg-[#121212]'>
           <div className="flex justify-center gap-40 items-center w-full px-6">
             <div className='max-w-5xl mb-14'>
+              
+
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+
+
+              <h1 className='text-5xl font-bold mb-12 text-gray-300 text-center'>Manifesto</h1>
+              <p className='text-lg xl:text-xl text-gray-300 text-center'>
+              I am a <b>web developer</b> who spends their days in building <b>high quality, responsive websites</b>. With a ton of experience in <b>front-end</b> and <b>back-end</b> development, I can quickly and efficiently transform ideas into <b>top-tier websites</b>.
+              My proficiency with modern technologies and frameworks enables me to deliver <b>user-friendly</b>, <b>visually appealing</b> websites focused on fulfilling clients&apos; needs and customization.
+              </p>
+              <br/>
+              <p className='text-lg xl:text-xl text-gray-300 text-center'>
+              I am passionate about writing clean, maintainable code and optimizing performance for a future-proof seamless user experience. Whether I&apos;m building a simple landing page or a complex web application,
+              I bring <b>creativity, technical skill, and attention to detail</b> to every project.
+              </p>
+              {/* <Paragraph>
+                I am available for freelance work for front-end, back-end, or full-stack projects. 
+                If you are interested in collaborating, please <Link className='font-bold hover:underline text-[#9c0003]' href="mailto:softwaredevelopment.dollie@gmail.com?subject=Web%20Project%20Work!&body=Hi%20Dollar%2C%20I'm%20interested%20in%20a%20web%20development%20project.">email me</Link> and we&apos;ll discuss 
+                your project!
+              </Paragraph> */}
               <Paragraph>
+                I am a developer driven by creative vision and technical precision. While I am currently focusing on internal projects and academic milestones, I am always open to discussing future global collaborations for 2027. 
+              </Paragraph>
+              {/* <Paragraph>
                 I am available for freelance work for front-end, back-end, or full-stack projects. 
                 If you are interested in collaborating, please <Link className='font-bold hover:underline text-blue-600' href="mailto:softwaredevelopment.dollie@gmail.com?subject=Web%20Project%20Work!&body=Hi%20Dollar%2C%20I'm%20interested%20in%20a%20web%20development%20project.">email me</Link> and we&apos;ll discuss 
                 your project!
-              </Paragraph>
+              </Paragraph> */}
+
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+
             </div>
           </div>
       </div>
 
-      <div
+      {/* <div
         className='w-full bg-neutral-100 dark:bg-black'>
           <div className="flex justify-center items-center px-6">
             <div className="max-w-5xl w-full mt-16">
@@ -85,7 +148,7 @@ export default function HomePage() {
               </Paragraph>
             </div>
           </div>
-      </div>
+      </div> */}
 
        <div
         className='w-full bg-white dark:bg-neutral-950 flex justify-center'>
