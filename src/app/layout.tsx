@@ -1,17 +1,43 @@
 import type { Metadata } from "next";
-import { Gilda_Display } from "next/font/google";
 import "./globals.css";
 import '../lib/fontawesome'
+import localFont from 'next/font/local';
+import { Viewport } from "next";
 
-const gildaDisplay = Gilda_Display({
-  variable: "--font-gilda-display",
-  weight: '400',
-  subsets: ["latin"],
+const melodrama = localFont({
+  src: [
+    {
+      path: '../fonts/Melodrama-Semibold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-melodrama',
 });
 
+const satoshi = localFont({
+  src: [
+    {
+      path: '../fonts/Satoshi-Regular.woff',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-satoshi',
+});
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
+
 export const metadata: Metadata = {
-  title: "Dollie's Portfolio",
-  description: "A portfolio made by Dollie to showcase his front-end, back-end, and full-stack development.",
+  title: "MADE BY DOLLAR",
+  description: "",
 };
 
 export default function RootLayout({
@@ -22,9 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-      // ${geistSans.variable} ${geistMono.variable}
-        className={`max-w-full overflow-x-hidden ${gildaDisplay.className} antialiased`}
-        // style={{backgroundColor: '#f2f2f2'}}
+        className={`max-w-full overflow-x-hidden ${melodrama.className} antialiased`}
       >
         {children}
       </body>

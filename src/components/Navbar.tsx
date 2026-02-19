@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 
 type NavbarProps = {
@@ -10,39 +9,43 @@ export default function Navbar({isActive}: NavbarProps) {
     
     const linkClass = (page: string) =>
     `font-bold ${
-        isActive === page ? 'underline text-[#9c0003]' : 'text-black dark:text-white hover:underline'
+        isActive === page ? 'underline text-[#9c0003]' : 'text-black dark:text-white hover:text-gray-300'
     }`
 
   return (
-    <nav className="bg-white dark:bg-[#121212] flex pt-12 justify-center gap-16 text-xl text-black z-20">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-12">
-            <div className="flex flex-wrap items-center justify-between h-16">
-                <div className="flex flex-wrap flex-row w-full justify-between">
-                    <div>
-                        <div className="flex items-baseline space-x-5 sm:space-x-6 md:space-x-15 text-sm md:text-xl">
-                            <Link className={linkClass('home2')}  href="/">
-                            DOLLAR
-                            </Link>
-                            <Link className={linkClass('home')}  href="/">
-                            Home
-                            </Link>
-                            {/* <Link className={linkClass('about')} href="/about">
-                            About
-                            </Link> */}
-                            {/* <Link className={linkClass('contact')} href="/contact">
-                            Hire me
-                            </Link>
-                            <Link className={linkClass('projects')} href="/projects">
-                            Projects
-                            </Link>
-                            <Link className={linkClass('blog')} href="/blog">
-                            Blogs
-                            </Link> */}
-                        </div>
-                    </div>
-                </div>
+    <nav className="bg-transparent flex flex-col md:flex-row pt-6 pb-6 justify-center items-center gap-4 md:gap-16 text-xl text-black relative z-50 w-full">
+        <div className='flex flex-col md:flex-row w-full justify-between items-center gap-4'>
+            <div className="ml-0 md:ml-10 text-sm md:text-xl text-center md:text-left">
+                <Link className={linkClass('home2')}  href="/">
+                    MADE BY DOLLAR
+                </Link>
+            </div>
+
+            <div className='flex flex-wrap justify-center gap-6 md:gap-10 mr-0 md:mr-10 pointer-events-auto px-4'>                
+                <Link className={linkClass('home')}  href="/">
+                All
+                </Link>
+                <Link className={linkClass('projects')} href="/projects">
+                Projects
+                </Link>
+                <Link className={linkClass('contact')} href="/contact">
+                Contact
+                </Link>
+                <Link className={linkClass('subscribe')} href="/waitlist">
+                Subscribe
+                </Link>
             </div>
         </div>
+        {/* <div className="flex flex-wrap items-center justify-around h-16">
+            <div className="flex flex-wrap flex-row w-full justify-around">
+                <div>
+                    
+                </div>
+            </div>
+        </div> */}
+        {/* <div className="mx-auto px-4 sm:px-6 lg:px-12">
+            
+        </div> */}
     </nav>
   )
 }
