@@ -1,6 +1,7 @@
-// components/ProjectPreview.tsx
+'use client';
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 // Explicit type definitions to strictly avoid :any
 interface ProjectMedia {
@@ -55,11 +56,15 @@ export default function ProjectPreview({ title, description, link, media = [] }:
               // It is a real media object
               if (item.type === 'image') {
                 itemContent = (
-                  <img 
-                    src={item.url} 
-                    alt="preview" 
-                    className="w-full h-full object-cover opacity-30 group-hover:opacity-100 transition-opacity duration-500" 
-                  />
+                  <div className="relative w-full h-full overflow-hidden">
+                    <Image 
+                      src={item.url} 
+                      alt="preview" 
+                      fill
+                      sizes="(max-width: 768px) 100vw, 25vw"
+                      className="object-cover opacity-30 group-hover:opacity-100 transition-opacity duration-500" 
+                    />
+                  </div>
                 );
               } else {
                 // It is a video/other media

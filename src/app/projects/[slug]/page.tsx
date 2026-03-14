@@ -8,6 +8,8 @@ import Navbar from '@/components/Navbar';
 import { useState, use } from 'react';
 import ReactMarkdown from 'react-markdown';
 
+import Image from 'next/image';
+
 export default function ProjectDetail({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const project = projectData.find((p) => p.slug === slug);
@@ -124,11 +126,15 @@ export default function ProjectDetail({ params }: { params: Promise<{ slug: stri
                         </div>
                       </div>
                     ) : (
-                      <img 
-                        src={item.url} 
-                        alt={`${project.title} asset`} 
-                        className="w-full h-auto bg-neutral-900 border border-neutral-800 rounded-sm transition-all duration-500 hover:border-red-900/40"
-                      />
+                      <div className="relative w-full aspect-video border border-neutral-800 rounded-sm overflow-hidden bg-neutral-900 group">
+  <Image 
+    src={item.url} 
+    alt={`${project.title} asset`} 
+    fill
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    className="object-cover transition-all duration-500 hover:scale-105" 
+  />
+</div>
                     )}
                   </div>
                 ))}
