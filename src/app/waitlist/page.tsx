@@ -33,9 +33,9 @@ export default function WaitlistPage() {
   };
 
   return (
-    <div className="antialiased bg-white dark:bg-transparent h-dvh w-full text-black dark:text-white">
+    <div className="antialiased bg-transparent h-dvh w-full text-white">
       {/* HERO SECTION */}
-      <section className="mb-12 relative flex flex-col items-center justify-center border-b-2 border-black dark:border-white">
+      <section className="mb-12 relative flex flex-col items-center justify-center border-b-2 border-white">
         <div className="w-full">
           <Navbar isActive="subscribe" />
         </div>
@@ -73,7 +73,7 @@ export default function WaitlistPage() {
               <button 
                 type="submit"
                 disabled={loading}
-                className="w-full bg-black dark:bg-white text-white dark:text-black p-8 text-3xl font-black hover:invert transition-all disabled:opacity-50"
+                className="w-full bg-white text-black p-8 text-3xl font-black hover:invert transition-all disabled:opacity-50"
               >
                 {loading ? "VERIFYING..." : "GAIN ACCESS"}
               </button>

@@ -6,8 +6,8 @@ html {
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #101010;
+  --foreground: #101010;
 }
 
 @theme inline {
@@ -29,4 +29,32 @@ body {
   background: var(--background);
   color: var(--foreground);
   /* font-family: var(--font-melodrama), sans-serif; */
+}
+
+.indent-paragraphs p {
+  text-indent: 2rem; /* Adjust '2rem' to whatever size you prefer */
+  margin-bottom: 1.5rem; /* Keeps your nice vertical spacing */
+}
+
+.prose ul {
+  list-style-type: disc !important;
+  padding-left: 20px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.prose li {
+  margin-bottom: 5px !important;
+}
+
+.prose h3#toc-header {
+  margin-top: 4rem !important; /* Adjust '4rem' to whatever gap you want */
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff; /* Adjust for your theme */
+  margin-top: 2.5rem !important; /* Forces the extra space you wanted */
+  margin-bottom: 1rem !important;
 }

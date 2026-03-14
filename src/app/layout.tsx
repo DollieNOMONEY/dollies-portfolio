@@ -3,6 +3,8 @@ import "./globals.css";
 import '../lib/fontawesome'
 import localFont from 'next/font/local';
 import { Viewport } from "next";
+import BrowserConfig from "@/components/BrowserConfig";
+
 
 const melodrama = localFont({
   src: [
@@ -47,10 +49,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <BrowserConfig/>
       <body
         className={`max-w-full overflow-x-hidden ${melodrama.className} antialiased`}
       >
-        {children}
+        <div className="text-gray-300">
+          {children}
+        </div>
       </body>
     </html>
   );

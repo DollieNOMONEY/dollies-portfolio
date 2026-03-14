@@ -1,34 +1,86 @@
-type ProjectProps = {
-    title: string
-    description: string
-    link: string
+// components/ProjectPreview.tsx
+import Link from 'next/link';
+import React from 'react';
+
+// Explicit type definitions to strictly avoid :any
+interface ProjectMedia {
+  type: string;
+  url: string;
 }
 
+interface ProjectProps {
+  title: string;
+  description: string;
+  link: string;
+  media?: ProjectMedia[];
+}
 
-export default function ProjectPreview({title, description, link}: ProjectProps) {
+export default function ProjectPreview({ title, description, link, media = [] }: ProjectProps) {
+  
+  // Randomization Logic
+  const shuffledMedia = [...media]
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 4);
+
+  // Fallback: Use placeholders if no media exists
+  const displayItems: (ProjectMedia | number)[] = shuffledMedia.length > 0 
+    ? shuffledMedia 
+    : [1, 2, 3, 4];
+
   return (
-//    
-    <div className='flex gap-12 border-white border-t-2 border-b-2 box-border p-5'>
-        <div className='w-1/2'>
-           <h2 className='text-2xl font-bold mb-1'>
-            <a className='
-            underline hover:text-neutral-500 hover:cursor-pointer'
-            href={link}
-            target="_blank"
-            >{title}</a></h2>
-            <p className='text-md xl:text-lg mb-6 h-28 mt-2'>{description}</p>
+    <Link 
+      href={link}
+      className="group block flex-col md:flex-row border-t border-neutral-800 p-8 gap-10 items-end transition-all duration-500 hover:bg-[#161212] hover:border-red-950 cursor-pointer"
+    >
+      <div className="flex flex-col md:flex-row gap-10 items-center w-full">
+        {/* Left Side */}
+        <div className="w-full md:w-[30%] flex flex-col justify-center">
+          <h2 className="text-lg font-semibold tracking-tight text-white group-hover:text-red-600 transition-colors duration-300">
+            {title}
+          </h2>
+          <p className="text-xs text-neutral-500 mt-3 leading-relaxed group-hover:text-neutral-400 transition-colors">
+            {description}
+          </p>
         </div>
 
-        <div className='w-1/2'>
-            {/* <video
-                src="/vid/.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-            /> */}
-        </div>
-    </div>
+        {/* Right Side - Media Peeks */}
+        <div className="w-full md:w-[70%] flex md:grid md:grid-cols-4 gap-4 overflow-x-auto md:overflow-visible pb-4 md:pb-0 snap-x snap-mandatory">
+          {displayItems.map((item, i) => {
+            
+            // --- INDEPENDENT STATEMENT EXTRACTION ---
+            // This block replaces the nested ternary for clarity and type safety
+            let itemContent: React.ReactNode;
 
-  )
+            if (typeof item === 'object') {
+              // It is a real media object
+              if (item.type === 'image') {
+                itemContent = (
+                  <img 
+                    src={item.url} 
+                    alt="preview" 
+                    className="w-full h-full object-cover opacity-30 group-hover:opacity-100 transition-opacity duration-500" 
+                  />
+                );
+              } else {
+                // It is a video/other media
+                itemContent = <span className="text-red-900/40 text-[10px] font-mono">FILE_MV</span>;
+              }
+            } else {
+              // It is a fallback number [1, 2, 3, 4]
+              itemContent = <span className="text-neutral-700 text-xs font-mono">ASSET_{item}</span>;
+            }
+
+            return (
+              <div
+                key={i}
+                className="min-w-full md:min-w-0 aspect-square bg-neutral-900/50 rounded-sm snap-center border border-neutral-800 group-hover:border-red-900/30 flex items-center justify-center shrink-0 transition-all duration-500 overflow-hidden"
+              >
+                {itemContent}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </Link>
+  );
 }

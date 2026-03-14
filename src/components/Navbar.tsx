@@ -9,7 +9,7 @@ export default function Navbar({isActive}: NavbarProps) {
     
     const linkClass = (page: string) =>
     `font-bold ${
-        isActive === page ? 'underline text-[#9c0003]' : 'text-black dark:text-white hover:text-gray-300'
+        isActive === page ? 'underline text-[#9c0003]' : 'text-white hover:text-gray-300'
     }`
 
   return (
