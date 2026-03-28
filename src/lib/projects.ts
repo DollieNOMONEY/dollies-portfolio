@@ -1,14 +1,75 @@
 // lib/projects.ts
 export const projectData = [
+  {
+    id: "03",
+    title: "Im an individuuual",
+    slug: "002-im-an-individuuual",
+    banner: "/projects/003/003_020.png",
+    link: "/projects/002-im-an-individuuual",
+    desc: "As Dollie Aurelius prepares his first creative project, he was left out with a valuable mistake. No one is as commited as Dollie in a world of individuals in his generation with different diversity and priority. As Dollie found out that he had poor planning, he was on the verge of giving up because no one showed up. Yet he chose to express himselves in frustration in a laidback manner. He knew that he had a weak mind-set, thus complaining won't solve his future. The only way to move forward is to destroy his own identity to further strengthen his ability, promoting resilience. Spoiler alert, WAAI is rising.",
+    quote: "ima just film alone with strangers at this point i’ll still come regardless so i can borrow ur tripod? like i planned all of this and idk if i should be mad or this is only going to drive people away",
+    insta: "https://www.instagram.com/p/DWbilZEEmB2/",
+    yt: "https://www.youtube.com/watch?v=3Pd6pHQgzcI",
+    tiktok: "https://www.tiktok.com/@madeby.dollar/video/7622309316346825992",
+    category: "Music",
+    media: [
+      { type: 'image', url: '/projects/003/003_001.png' },
+      { type: 'image', url: '/projects/003/003_002.png' },
+      { type: 'image', url: '/projects/003/003_003.png' },
+      { type: 'image', url: '/projects/003/003_004.png' },
+      { type: 'image', url: '/projects/003/003_005.png' },
+      { type: 'image', url: '/projects/003/003_006.png' },
+      { type: 'image', url: '/projects/003/003_007.png' },
+      { type: 'image', url: '/projects/003/003_008.png' },
+      { type: 'image', url: '/projects/003/003_009.png' },
+      { type: 'image', url: '/projects/003/003_010.png' },
+      { type: 'image', url: '/projects/003/003_011.png' },
+      { type: 'image', url: '/projects/003/003_012.png' },
+      { type: 'image', url: '/projects/003/003_013.png' },
+      { type: 'image', url: '/projects/003/003_014.png' },
+      { type: 'image', url: '/projects/003/003_015.png' },
+      { type: 'image', url: '/projects/003/003_016.png' },
+      { type: 'image', url: '/projects/003/003_017.png' },
+      { type: 'image', url: '/projects/003/003_018.png' },
+      { type: 'image', url: '/projects/003/003_019.png' },
+      { type: 'image', url: '/projects/003/003_020.png' },
+      { type: 'image', url: '/projects/003/003_021.png' },
+      { type: 'image', url: '/projects/003/003_022.png' },
+      { type: 'image', url: '/projects/003/003_023.png' },
+      { type: 'image', url: '/projects/003/003_024.png' },
+      { type: 'image', url: '/projects/003/003_025.png' },
+      { type: 'image', url: '/projects/003/003_026.png' },
+      { type: 'image', url: '/projects/003/003_027.png' },
+      { type: 'image', url: '/projects/003/003_028.png' },
+      { type: 'image', url: '/projects/003/003_029.jpg' },
+      { type: 'image', url: '/projects/003/003_030.png' },
+      { type: 'image', url: '/projects/003/003_031.png' },
+      { type: 'image', url: '/projects/003/003_032.png' },
+      { type: 'image', url: '/projects/003/003_033.png' },
+    ],
+    documentation: `Yellow's the color of the disappointment I've never intend it to be.
+
+As yellow shades represents the streets of "Modern Rome" in Phnom Penh, it also represents the anger poured into his emotions when things are not going as expected. It's a whole level of disappointment. Because of the change of plans tied to indecisiveness, the vocals are meant to bring a cooler shade, filled with texture, unfinished, and sadness. Yet as emotions and color clashes, he chose to lean into his own indecisiveness in order to keep his composure.  
+
+Representing WAAI, Dollie Aurelius was an self-composed outsider who preferred playing with textures tied to a dark red aesthetic, symbolizing pain and struggle to his every-day life. Born with a sense of pride to become a creative director, no singular person would be on his side, he thought. Due to one's self-centered ego, every single person in existence would leave him with excuses just so they can escape his arrogance. Yet he was clever to notice that being an individual also meant that actions must be taken even when things did not go his way. As his notebook was a symbol full of meaningful lyrics, it also poses potential eradication, similarly to a Death Note. 
+
+On the contrary, Theo Massimo preferred isolation. Being in an artistic family also influences her way of living. Art. Art. Art. Art. Art. That is the only thing that sooths her. Art. ART. ART. ART. ART. As technology has evolved, a stylus was the biggest gift provided by the family.
+
+TT. Caesar has won multiple awards for being one of the most terrible writers in the entire planet. As TT. prepares for the WWW Award (World's Worst Writer's Award), he had wasted no time to attend it within full priority. Because of Dollie Aurelius' self-centeredness, Dollie expected his own blood to follow along. Yet disappointment rises as Dollie found out his only true believer, TT was not there for him anymore. After all, he preferred ASS. Caesar's companionship rather than TT. Caesar's.
+  `
+  },
+
   { 
     id: "02", 
     title: "ENTERING THE NEW WORLD: DEMO #1", 
     slug: "001-entering-the-new-world", 
+    banner: "/projects/002/002_002.jpg",
     link: "/projects/001-entering-the-new-world",
     desc: "Due to language barriers. Cambodian music is frequently excluded to the music industry. We're demolishing that ceiling aggressively. These 30-second experimental pieces are a rejection of industry gatekeeping—unguided, purely creative on the spot, demonstrating the origin. I used a decade of my skills to prove that high-impact art does not require a whole studio—it requires absolute, full commitment.", 
     quote: "All I want to do is to change the world as a multi-hyphenate globally. However, the only way to get to the top honestly is to keep doin' what you're doing. Having extreme discipline with a system and social intelligence is the only way to seperate yourself and your own surroundings. This is not advice, this is a requirement. Make your sacrifices wisely, because I know you are smart enough to realize your full potential.", 
-    insta: "https://instagram.com/",
-    yt: "https://youtube.com/",
+    insta: "https://www.instagram.com/madeby_dollar/",
+    yt: "https://youtube.com/playlist?list=PL7D3w7WRZnpiv4c3iv-rrkJg3jA_X8AN-&si=O7F5pUBeSF29-0Re",
+    tiktok: "https://www.tiktok.com/@madeby.dollar/collection/ENTERING%20THE%20NEW%20WORLD%3A%20DEMO%201-7621849647762672392?is_from_webapp=1&sender_device=pc",
     category: "Music",
     media: [
       { type: 'image', url: '/projects/002/002_001.jpg' },

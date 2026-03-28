@@ -40,7 +40,8 @@ export default function ProjectsPage() {
               key={p.id} 
               title={p.title} 
               description={p.desc} 
-              link={p.link} 
+              link={p.link}
+              banner={p.banner}
               media={p.media} // CRITICAL: This connects the preview to your assets
             />
           ))

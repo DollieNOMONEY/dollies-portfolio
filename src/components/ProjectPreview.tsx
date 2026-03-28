@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import React from 'react';
+import {useState} from 'react';
 import Image from 'next/image';
 
 // Explicit type definitions to strictly avoid :any
@@ -13,27 +13,44 @@ interface ProjectProps {
   title: string;
   description: string;
   link: string;
+  banner?: string;
   media?: ProjectMedia[];
 }
 
-export default function ProjectPreview({ title, description, link, media = [] }: ProjectProps) {
+export default function ProjectPreview({ title, description, link, banner, media = [] }: ProjectProps) {
   
-  // Randomization Logic
+  // random
   const shuffledMedia = [...media]
     .sort(() => 0.5 - Math.random())
     .slice(0, 4);
 
-  // Fallback: Use placeholders if no media exists
+  // fallback; use the placeholders if no media exists
   const displayItems: (ProjectMedia | number)[] = shuffledMedia.length > 0 
     ? shuffledMedia 
     : [1, 2, 3, 4];
 
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <Link 
       href={link}
-      className="group block flex-col md:flex-row border-t border-neutral-800 p-8 gap-10 items-end transition-all duration-500 hover:bg-[#161212] hover:border-red-950 cursor-pointer"
+      className="relative overflow-hidden group block flex-col md:flex-row border-t p-8 gap-10 items-end transition-all duration-500 hover:bg-[#161212] hover:border-red-950 cursor-pointer"
     >
-      <div className="flex flex-col md:flex-row gap-10 items-center w-full">
+
+      {banner && (
+        <div className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out pointer-events-none
+          ${isLoaded ? 'opacity-0 group-hover:opacity-10' : 'opacity-0'}`}>
+          <Image 
+            src={banner} 
+            alt="banner"
+            fill
+            className="object-cover grayscale"
+            onLoad={() => setIsLoaded(true)}
+          />
+        </div>
+      )}
+
+      <div className="flex flex-col z-10 md:flex-row gap-10 items-center w-full z-10">
         {/* Left Side */}
         <div className="w-full md:w-[30%] flex flex-col justify-center">
           <h2 className="text-lg font-semibold tracking-tight text-white group-hover:text-red-600 transition-colors duration-300">
