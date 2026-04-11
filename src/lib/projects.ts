@@ -1,5 +1,72 @@
 // lib/projects.ts
 export const projectData = [
+  { 
+
+    id: "04",
+    title: "Nobody EST / NO GAS",
+    slug: "003-nobody-est-no-gas",
+    banner: "/projects/004/IMG_027.png",
+    link: "/projects/003-nobody-est-no-gas",
+    desc: "Dollie Aurelius expresses his frustration against the rise of gas prices against everyone's experience with love. Without stability, their children would not be able to live their best life with the ongoing crisis. In a relationship, whether they are facing mental toughness or a hardship, everyone is human enough to realize that everyone is on the same side when they have the same struggle.",
+    quote: "From now on, I'm lowering my expectations.",
+    insta: "https://www.instagram.com/p/DW-Yfo1ExJe/",
+    yt: "https://www.youtube.com/watch?v=s9DRdAhrTbw",
+    tiktok: "https://www.tiktok.com/@madeby.dollar/video/7627322337829899541",
+    category: "Music",
+    media: [
+      { type: 'image', url: '/projects/004/IMG_001.png' },
+      { type: 'image', url: '/projects/004/IMG_002.png' },
+      { type: 'image', url: '/projects/004/IMG_003.png' },
+      { type: 'image', url: '/projects/004/IMG_004.png' },
+      { type: 'image', url: '/projects/004/IMG_005.png' },
+      { type: 'image', url: '/projects/004/IMG_006.png' },
+      { type: 'image', url: '/projects/004/IMG_007.png' },
+      { type: 'image', url: '/projects/004/IMG_008.png' },
+      { type: 'image', url: '/projects/004/IMG_009.png' },
+      { type: 'image', url: '/projects/004/IMG_010.png' },
+      { type: 'image', url: '/projects/004/IMG_011.png' },
+      { type: 'image', url: '/projects/004/IMG_012.png' },
+      { type: 'image', url: '/projects/004/IMG_013.png' },
+      { type: 'image', url: '/projects/004/IMG_014.png' },
+      { type: 'image', url: '/projects/004/IMG_015.png' },
+      { type: 'image', url: '/projects/004/IMG_016.png' },
+      { type: 'image', url: '/projects/004/IMG_017.png' },
+      { type: 'image', url: '/projects/004/IMG_018.png' },
+      { type: 'image', url: '/projects/004/IMG_019.png' },
+      { type: 'image', url: '/projects/004/IMG_020.png' },
+      { type: 'image', url: '/projects/004/IMG_021.png' },
+      { type: 'image', url: '/projects/004/IMG_022.png' },
+      { type: 'image', url: '/projects/004/IMG_023.png' },
+      { type: 'image', url: '/projects/004/IMG_024.png' },
+      { type: 'image', url: '/projects/004/IMG_025.png' },
+      { type: 'image', url: '/projects/004/IMG_026.png' },
+      { type: 'image', url: '/projects/004/IMG_027.png' },
+      { type: 'image', url: '/projects/004/IMG_028.png' },
+      { type: 'image', url: '/projects/004/IMG_029.png' },
+      { type: 'image', url: '/projects/004/IMG_030.png' },
+      { type: 'image', url: '/projects/004/IMG_031.png' },
+      { type: 'image', url: '/projects/004/IMG_032.png' },
+      { type: 'image', url: '/projects/004/IMG_033.png' },
+      { type: 'image', url: '/projects/004/IMG_034.png' },
+      { type: 'image', url: '/projects/004/IMG_035.png' },
+      { type: 'image', url: '/projects/004/IMG_036.png' },
+    ],
+    documentation: `I never thought about adding a beat switch until I found out that it didn't feel complete.
+
+Initially, he noticed a struggle. People would start being more cautious of saving money. Even finding out how much money was deducted after spending it for a liter. Family is important. If creating a family is considered, they will live their best lives without my own personal struggle, while facing hard-work. It doesn't matter who is in my presence or who I choose to spend the rest of my life with. If there is no foundation or any sort of resilience, self-sabotage is evitable.
+
+Representing WAAI, Individuals have every right to express themselves. He started the foundation with the music of the problem, composing lyrics after lyrics, and noticed it didn't feel completed. He chose to add the first part to include the danceability and catchiness before a deeper introspective verse. It's a disguise--a hook that leads into a deeper meaning. As he started becoming more comfortable and immersed in his area, he knew he had to include a bit of Khmer lyrics. His exceptional song-writing skills are no excuse to exclude his native tongue.
+
+Inspired with Tyler, the Creator's artistry and K-Pop hybrid aesthetic. He blended them into a version that is entirely my own.
+
+His confidence shattered when he realize none of his peers could make it to his music video. He was left with two choices. Give up, or continue regardless. Last time, he had a back-up cameraman. This was the time he had to do everything himself. He could not back down anymore, considering the storyboard was all written, the song was already completed, the outfit was curated, and he had an on-going 2-week release schedule. This was the only time he could ever shoot the music video. He only brought what he had. A tripod, an outfit, and a bike.
+
+Got back home and studied the colors. He realized the clips were messier than expected. He had to face frequent crashes with Premiere Pro considering he shot everything in 4k. It was stressful. Proxies had to be used for the sake of it.
+
+Finally, it is complete. Everything handled by **Dollar** himself.
+  `
+  },
+
   {
     id: "03",
     title: "Im an individuuual",
