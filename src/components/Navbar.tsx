@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 type NavbarProps = {
-    isActive: string
+    readonly  isActive: string
 }
 
 export default function Navbar({isActive}: NavbarProps) {

@@ -1,7 +1,20 @@
 // lib/projects.ts
 export const projectData = [
-  { 
+    {
+    id: "01", 
+    title: "WAPIWAPI", 
+    slug: "001-wapi-wapi", 
+    link: "/projects/001-wapi-wapi",
+    desc: "REDACTED.", 
+    quote: "REDACTED.", 
+    insta: "/", 
+    yt: "/",
+    tiktok: "/",
+    category: "Website",
+    media: [
+    ]},
 
+    {
     id: "04",
     title: "Nobody EST / NO GAS",
     slug: "003-nobody-est-no-gas",
@@ -177,18 +190,3 @@ On every demo, I exercised full control over:
   },
   
 ];
-
-// { 
-//     id: "01", 
-//     title: "Productivity Platform", 
-//     slug: "001-website-productivity-platform", 
-//     link: "/projects/001-website-productivity-platform",
-//     desc: "In development.", 
-//     quote: "Work smarter.", 
-//     insta: "https://instagram.com/", 
-//     yt: "https://youtube.com/",
-//     category: "Website",
-//     media: [
-//       { type: 'image', url: '/images/standards-01.jpg' },
-//     ]
-//   },

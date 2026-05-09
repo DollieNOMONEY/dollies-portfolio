@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
-// Make sure to create a firebase.ts file in your lib folder to export 'db'
 import { db } from '@/lib/firebase'; 
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
@@ -15,7 +14,6 @@ export default function WaitlistPage() {
     setLoading(true);
 
     try {
-      // Direct Firebase Automation
       await addDoc(collection(db, "waitlist"), {
         name: formData.name,
         email: formData.email,
@@ -34,7 +32,6 @@ export default function WaitlistPage() {
 
   return (
     <div className="antialiased bg-transparent h-dvh w-full text-white">
-      {/* HERO SECTION */}
       <section className="mb-12 relative flex flex-col items-center justify-center border-b-2 border-white">
         <div className="w-full">
           <Navbar isActive="subscribe" />
@@ -45,13 +42,11 @@ export default function WaitlistPage() {
         </h1>
       </section>
 
-      {/* FORM SECTION */}
       <section className="flex flex-col items-center justify-center py-20 px-6">
         <div className="w-full max-w-4xl">
           {step === 1 ? (
-            /* STEP 1: IDENTITY */
             <form onSubmit={handlePhaseOne} className="space-y-8">
-              <label className="block text-sm font-mono uppercase tracking-[0.3em] opacity-60">Phase_01 // Register</label>
+              <p className="block text-sm font-mono uppercase tracking-[0.3em] opacity-60">Phase_01 // Register</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-3">
                 <input 
@@ -79,9 +74,8 @@ export default function WaitlistPage() {
               </button>
             </form>
           ) : (
-            /* STEP 2: DISCORD */
             <div className="space-y-8 animate-in slide-in-from-bottom-10 duration-700">
-              <label className="block text-sm font-mono uppercase tracking-[0.3em] text-green-500">Phase_02 // Community Entry</label>
+              <p className="block text-sm font-mono uppercase tracking-[0.3em] text-green-500">Phase_02 // Community Entry</p>
               <h2 className="text-4xl md:text-7xl font-bold tracking-tight">WELCOME, {formData.name.toUpperCase()}!</h2>
               <p className="text-xl md:text-2xl font-mono opacity-80">Thank you! Finally, join our digital studio.</p>
               
