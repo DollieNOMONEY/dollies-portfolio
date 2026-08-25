@@ -1,34 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import '../lib/fontawesome'
-import localFont from 'next/font/local';
+import { anton } from '@/app/fonts'
 import { Viewport } from "next";
 import BrowserConfig from "@/components/BrowserConfig";
-
-
-const melodrama = localFont({
-  src: [
-    {
-      path: '../fonts/Melodrama-Semibold.woff2',
-      weight: '600',
-      style: 'normal',
-    },
-  ],
-  display: 'swap',
-  variable: '--font-melodrama',
-});
-
-const satoshi = localFont({
-  src: [
-    {
-      path: '../fonts/Satoshi-Regular.woff',
-      weight: '400',
-      style: 'normal',
-    },
-  ],
-  display: 'swap',
-  variable: '--font-satoshi',
-});
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -51,9 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <BrowserConfig/>
       <body
-        className={`max-w-full overflow-x-hidden ${melodrama.className} antialiased`}
+        className={`max-w-full overflow-x-hidden ${anton.className} antialiased`}
       >
-        <div className="text-gray-300">
+        <div>
           {children}
         </div>
       </body>

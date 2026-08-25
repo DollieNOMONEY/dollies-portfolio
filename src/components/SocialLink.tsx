@@ -19,7 +19,7 @@ export default function SocialLink({
   return (
     <div className="flex gap-12 mb-2">
       <div className="flex gap-2 w-25">
-        <FontAwesomeIcon icon={["fab", iconName]} className="w-6 h-6" />
+        <FontAwesomeIcon icon={["fab", iconName]} className="w-5 h-5" />
         <p>{title}</p>
       </div>
       <div className="flex gap-2">
