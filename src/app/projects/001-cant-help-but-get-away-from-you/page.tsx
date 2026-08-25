@@ -5,6 +5,7 @@ import Image from 'next/image';
 import YouTubeEmbed from '@/components/YoutubeEmbed';
 import PinterestEmbed from '@/components/PinterestEmbed';
 import Navbar from '@/components/Navbar';
+import SoundCloudEmbed from '@/components/SoundCloudEmbed';
 
 export default function page() {
 
@@ -69,7 +70,7 @@ export default function page() {
 
         <div className="z-10 text-center text-white">
           <h2 className="text-5xl font-bold">Can't Help But Get Away From You</h2>
-          <p className={`${bellota.className} text-zinc-400 mt-2`}>Made By Dollar</p>
+          {/* <p className={`${bellota.className} text-zinc-400 mt-2`}>Made By Dollar</p> */}
         </div>
       </section>
         
@@ -97,12 +98,11 @@ export default function page() {
 
       <div className="max-w-5xl mx-auto my-8">
         <YouTubeEmbed videoId="LLHDtb864eU" />
-      </div>
-
-      <div className="max-w-5xl mx-auto my-8">
-        <PinterestEmbed pinUrl="https://www.pinterest.com/madebydollar/fck-yeah-series/series-001/"
+        <SoundCloudEmbed trackUrl="https://soundcloud.com/madebydollar/cant-help-but-get-away-from"/>
+         <PinterestEmbed pinUrl="https://www.pinterest.com/madebydollar/fck-yeah-series/series-001/"
         title="Moodboard" />
       </div>
+
 
     </div>
   )
