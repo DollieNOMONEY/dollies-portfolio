@@ -98,11 +98,10 @@ export default function page() {
 
       <div className="max-w-5xl mx-auto my-8">
         <YouTubeEmbed videoId="LLHDtb864eU" />
-        <SoundCloudEmbed trackUrl="https://soundcloud.com/madebydollar/cant-help-but-get-away-from"/>
+        <SoundCloudEmbed className='w-full max-w-xl' trackUrl="https://soundcloud.com/madebydollar/cant-help-but-get-away-from"/>
          <PinterestEmbed pinUrl="https://www.pinterest.com/madebydollar/fck-yeah-series/series-001/"
         title="Moodboard" />
       </div>
-
 
     </div>
   )

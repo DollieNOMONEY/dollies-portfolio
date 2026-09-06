@@ -6,7 +6,7 @@ type NavbarProps = {
 
 export default function Navbar({isActive}: NavbarProps) {
   return (
-    <nav className="bg-transparent flex flex-col md:flex-row pt-6 pb-6 justify-center items-center gap-4 md:gap-16 text-xl text-black relative z-50 w-full">
+    <nav className="bg-transparent flex flex-col md:flex-row pt-6 pb-6 justify-center items-center gap-4 md:gap-16 text-xl text-black absolute z-50 w-full">
         <div className='flex flex-col md:flex-row w-full justify-between items-center gap-4'>
             <div className="ml-0 md:ml-10 text-sm md:text-xl text-center md:text-left">
                 <Link href="/" className="text-[#9c0003]">
