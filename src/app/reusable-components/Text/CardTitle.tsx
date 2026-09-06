@@ -1,5 +1,4 @@
 import React from 'react'
-import { luxuriousScript } from '@/app/fonts';
 
 interface CardTitleProps {
     readonly children: React.ReactNode,
@@ -8,7 +7,7 @@ interface CardTitleProps {
 
 export default function CardTitle({children, className=""}: CardTitleProps) {
   return (
-    <h1 className={`${luxuriousScript.className} text-lg md:text-xl tracking-widest ${className}`}>
+    <h1 className={`text-lg md:text-xl tracking-widest ${className}`}>
         {children}
     </h1>
   )
